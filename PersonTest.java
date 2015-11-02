@@ -25,4 +25,12 @@ public class PersonTest {
 		String expected = "BE";
 		assertEquals(output, expected);
 	}
+	
+	@Test
+	public void testsRandomSpace(){
+		String input = "Bert  Ernie";
+		String output = p.getInitials(input);
+		String expected = "BE";
+		assertEquals(output, expected);
+	}
 }
