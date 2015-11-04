@@ -16,8 +16,8 @@ public class GenericStack<T extends Number> extends GenericList{
 
 	public void push(T obj){
 		GenericObj<T extends Number> newNode = new GenericObj<T extends Number>(obj);
-		if(this.node.getNext() == null){
-			this.node = newNode;
+		if(node.getNext() != null){
+			node.getNext() = newNode;
 		}else{
 			this.node.addNode(num);
 		}
